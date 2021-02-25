@@ -1,0 +1,28 @@
+<p>login works!</p>
+
+<br><br><br>
+<form action="#" method="post">
+  <div class="imgcontainer">
+    <h3>LOGIN</h3>
+    <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Email</b></label>
+    <input [(ngModel)]="user.username" type="text" placeholder="Email" name="name" required>
+    <br>
+    <label for="psw"><b>Password</b></label>
+    <input [(ngModel)]="user.password" type="password" placeholder="Password" name="password" required>
+
+    <button type="button" (click)="login()">LOGIN</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <br>
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.7);">
+      <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+      <p class="psw"><a href="#">Esqueceu a Senha?</a></p>
+      <br>
+    </div>
+  </div>
+</form>

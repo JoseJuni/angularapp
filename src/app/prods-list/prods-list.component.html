@@ -1,0 +1,18 @@
+<p>prods-list works!</p>
+
+<table>
+<thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+  </tr>
+</thead>
+
+<tbody *ngFor="let item of list">
+  <tr (click)="onSelect(item)" [class.selected] ="isSelected(item)">
+    <td>{{item.capital}}</td>
+    <td>{{item.name}}</td>
+  </tr>
+</tbody>
+
+</table>
